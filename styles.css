@@ -88,12 +88,18 @@ body {
 .hero {
     padding: 140px 0 80px;
     background: linear-gradient(180deg, var(--gray-50) 0%, white 100%);
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 600px;
 }
 
 .hero h1 {
@@ -148,13 +154,12 @@ body {
 
 .hero-proof {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .proof-item {
-    text-align: center;
+    text-align: left;
 }
 
 .proof-item strong {
@@ -168,6 +173,109 @@ body {
 .proof-item span {
     color: var(--gray-600);
     font-size: 14px;
+}
+
+/* Hero Visual */
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+.visual-card {
+    position: absolute;
+    background: white;
+    border: 2px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    animation: float 3s ease-in-out infinite;
+}
+
+.visual-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-1 {
+    top: 20%;
+    left: 0;
+    width: 200px;
+    animation-delay: 0s;
+}
+
+.card-2 {
+    top: 45%;
+    right: 0;
+    width: 220px;
+    animation-delay: 1s;
+}
+
+.card-3 {
+    bottom: 10%;
+    left: 40px;
+    width: 200px;
+    animation-delay: 2s;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.card-icon {
+    font-size: 24px;
+}
+
+.card-status {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card-status.success {
+    color: #10B981;
+}
+
+.card-content {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.visual-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
 }
 
 /* Problem */
@@ -618,6 +726,16 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
     .hero h1 {
         font-size: 36px;
     }
@@ -627,7 +745,16 @@ body {
     }
 
     .hero-proof {
-        gap: 40px;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .proof-item {
+        text-align: center;
+    }
+
+    .hero-image {
+        display: none;
     }
 
     .problem h2,
