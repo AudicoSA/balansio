@@ -1,0 +1,228 @@
+// Prisma schema for BALANSIO - AI Bookkeeping Platform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User accounts
+model User {
+  id                 String   @id @default(cuid())
+  email              String   @unique
+  name               String?
+  passwordHash       String
+  phone              String?
+  company            String?
+
+  // Subscription
+  subscriptionStatus String   @default("trial") // trial, active, inactive, cancelled
+  subscriptionTier   String   @default("starter") // starter, professional, enterprise
+  trialEndsAt        DateTime @default(now())
+  subscriptionEndsAt DateTime?
+
+  // WhatsApp opt-in
+  whatsappOptIn      Boolean  @default(false)
+
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  // Relations
+  xeroConnections    XeroConnection[]
+  receipts           Receipt[]
+  transactions       Transaction[]
+  payments           Payment[]
+
+  @@index([email])
+}
+
+// Xero OAuth connections
+model XeroConnection {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  tenantId     String   // Xero organization ID
+  tenantName   String
+  tenantType   String?  // organisation type
+
+  // OAuth tokens (should be encrypted)
+  accessToken  String   @db.Text
+  refreshToken String   @db.Text
+  idToken      String?  @db.Text
+  expiresAt    DateTime
+
+  // Scopes granted
+  scopes       String[] @default([])
+
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([userId, tenantId])
+  @@index([userId])
+  @@index([tenantId])
+}
+
+// Uploaded receipts and invoices
+model Receipt {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // File storage
+  imageUrl     String   // S3 URL or Vercel Blob URL
+  fileName     String
+  fileSize     Int?
+  mimeType     String?
+
+  // Processing status
+  status       String   @default("pending") // pending, processing, completed, error, approved
+
+  // OCR Results (AWS Textract output)
+  vendor       String?
+  amount       Float?
+  currency     String   @default("ZAR")
+  date         DateTime?
+  taxAmount    Float?   // VAT amount
+  taxRate      Float?   // e.g. 0.15 for 15%
+  description  String?
+
+  // AI categorization
+  suggestedCategory String?
+  suggestedAccount  String? // Xero account code
+  confidence        Float?  // 0-1 confidence score
+  aiAnalysis        Json?   // Full AI response
+
+  // User review
+  manualCategory    String?
+  manualAccount     String?
+  userApproved      Boolean @default(false)
+
+  // Xero linkage
+  xeroTransactionId String?
+  xeroAttachmentId  String?
+  postedToXero      Boolean @default(false)
+
+  // Source
+  source           String   @default("web") // web, whatsapp, email
+  whatsappFrom     String? // WhatsApp number if from WhatsApp
+
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// Cached transactions from Xero
+model Transaction {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Xero reference
+  xeroId       String?
+  xeroType     String?  // SPEND, RECEIVE, etc.
+
+  // Transaction details
+  type         String   // expense, income
+  amount       Float
+  currency     String   @default("ZAR")
+  description  String
+  reference    String?
+
+  // Categorization
+  category     String?
+  accountCode  String?  // Xero account code
+  accountName  String?
+
+  // AI metadata
+  aiCategorized Boolean  @default(false)
+  confidence    Float?
+  needsReview   Boolean  @default(false)
+
+  // Dates
+  date         DateTime
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([userId])
+  @@index([date])
+  @@index([xeroId])
+}
+
+// Payment records (PayFast)
+model Payment {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // PayFast details
+  payfastId      String?  @unique // m_payment_id
+  paymentStatus  String   // COMPLETE, FAILED, PENDING
+
+  // Payment info
+  amount         Float
+  currency       String   @default("ZAR")
+  plan           String   // starter, professional, enterprise
+
+  // Billing period
+  billingDate    DateTime
+  periodStart    DateTime
+  periodEnd      DateTime
+
+  // PayFast IPN data
+  ipnData        Json?
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([userId])
+  @@index([payfastId])
+}
+
+// AI-generated reports and summaries
+model Report {
+  id           String   @id @default(cuid())
+  userId       String
+
+  type         String   // monthly_summary, compliance_check, insights
+  title        String
+  content      String   @db.Text // AI-generated content
+  data         Json?    // Structured data
+
+  // Period covered
+  periodStart  DateTime
+  periodEnd    DateTime
+
+  createdAt    DateTime @default(now())
+
+  @@index([userId])
+  @@index([type])
+  @@index([periodStart])
+}
+
+// Audit log for compliance (POPIA)
+model AuditLog {
+  id           String   @id @default(cuid())
+  userId       String?
+
+  action       String   // login, xero_connect, receipt_upload, transaction_post, etc.
+  entityType   String?  // User, Receipt, Transaction, etc.
+  entityId     String?
+
+  details      Json?
+  ipAddress    String?
+  userAgent    String?
+
+  createdAt    DateTime @default(now())
+
+  @@index([userId])
+  @@index([action])
+  @@index([createdAt])
+}
