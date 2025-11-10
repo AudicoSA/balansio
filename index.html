@@ -3,541 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BALANSIO - AI-powered bookkeeping and financial intelligence for South African businesses. Automate your accounting, gain real-time insights, and scale with confidence.">
-    <meta name="keywords" content="AI bookkeeping, automated accounting, Xero integration, financial intelligence, South Africa accounting, bookkeeping automation">
-    <title>BALANSIO - AI-Powered Bookkeeping & Financial Intelligence</title>
+    <meta name="description" content="AI-powered bookkeeping for South African businesses. Automate your accounting on Xero. Save 15+ hours per month.">
+    <title>BALANSIO | AI Bookkeeping for SA Businesses</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="nav">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <rect width="40" height="40" rx="10" fill="url(#logoGradient)"/>
-                        <circle cx="20" cy="20" r="10" stroke="white" stroke-width="2" fill="none"/>
-                        <circle cx="20" cy="20" r="5" fill="white"/>
-                        <path d="M20 10 L20 15 M20 25 L20 30 M10 20 L15 20 M25 20 L30 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <span class="logo-text">BALANSIO</span>
-                </div>
+                <div class="logo">BALANSIO</div>
                 <div class="nav-links">
-                    <a href="#platform">Platform</a>
-                    <a href="#features">Features</a>
+                    <a href="#how">How It Works</a>
                     <a href="#pricing">Pricing</a>
-                    <a href="#about">About</a>
-                    <a href="#contact" class="btn-nav-cta">Get Started</a>
+                    <a href="#contact" class="btn-nav">Get Started</a>
                 </div>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#platform" onclick="toggleMobileMenu()">Platform</a>
-        <a href="#features" onclick="toggleMobileMenu()">Features</a>
-        <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
-        <a href="#about" onclick="toggleMobileMenu()">About</a>
-        <a href="#contact" onclick="toggleMobileMenu()">Get Started</a>
-    </div>
-
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="hero-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-icon">✨</span>
-                    <span>AI-Powered Financial Intelligence</span>
-                </div>
-                <h1 class="hero-title">
-                    Your Finance Team,<br>
-                    <span class="gradient-text">Powered by AI</span>
-                </h1>
-                <p class="hero-subtitle">
-                    BALANSIO combines cutting-edge AI with expert financial oversight to automate your bookkeeping,
-                    unlock real-time insights, and scale your business with confidence. Built on Xero. Made for growth.
-                </p>
+                <h1>Stop Doing Bookkeeping Manually</h1>
+                <p class="hero-subtitle">AI handles your receipts, invoices, and reconciliation automatically. Built on Xero. Made for South African businesses.</p>
                 <div class="hero-cta">
-                    <a href="#contact" class="btn-primary-large">Schedule Demo</a>
-                    <a href="#platform" class="btn-secondary-large">Explore Platform</a>
+                    <a href="#contact" class="btn-primary">Start Free Trial</a>
+                    <p class="hero-note">14 days free • No credit card • Setup in 1 day</p>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">85%</div>
-                        <div class="stat-label">Time Saved</div>
+                <div class="hero-proof">
+                    <div class="proof-item">
+                        <strong>15+ hours</strong>
+                        <span>saved per month</span>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Accuracy</div>
+                    <div class="proof-item">
+                        <strong>99% accurate</strong>
+                        <span>AI categorization</span>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">AI Operations</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Real-Time</div>
-                        <div class="stat-label">Insights</div>
+                    <div class="proof-item">
+                        <strong>R2,999/mo</strong>
+                        <span>vs R15k+ bookkeeper</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
+    <!-- Problem -->
+    <section class="problem">
         <div class="container">
-            <div class="trust-content">
-                <span class="trust-label">Trusted Infrastructure:</span>
-                <div class="trust-logos">
-                    <div class="trust-logo">Xero Certified Partner</div>
-                    <div class="trust-logo">AI-Powered</div>
-                    <div class="trust-logo">SARS Compliant</div>
-                    <div class="trust-logo">Bank-Grade Security</div>
+            <h2>You're Wasting Time on Tasks a Computer Should Do</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>Entering receipts manually</h3>
+                    <p>Snap a photo. AI extracts the data. Done in 3 seconds instead of 3 minutes.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Platform Overview -->
-    <section id="platform" class="platform-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">The Platform</div>
-                <h2>AI Agents That Never Sleep</h2>
-                <p>Our intelligent agents work 24/7 to automate your financial operations, from receipt capture to reconciliation.</p>
-            </div>
-            <div class="agents-grid">
-                <div class="agent-card">
-                    <div class="agent-icon gradient-purple">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M16 8C12.69 8 10 10.69 10 14C10 17.31 12.69 20 16 20C19.31 20 22 17.31 22 14C22 10.69 19.31 8 16 8ZM16 18C13.79 18 12 16.21 12 14C12 11.79 13.79 10 16 10C18.21 10 20 11.79 20 14C20 16.21 18.21 18 16 18Z" fill="white"/>
-                            <path d="M16 22C11.33 22 7.5 24.46 7.5 27.5H8.5C8.5 25.01 11.91 23 16 23C20.09 23 23.5 25.01 23.5 27.5H24.5C24.5 24.46 20.67 22 16 22Z" fill="white"/>
-                        </svg>
-                    </div>
-                    <h3>Document Intelligence</h3>
-                    <p>AI extracts data from receipts, invoices, and statements with OCR technology. Snap, upload, done.</p>
-                    <ul class="agent-features">
-                        <li>WhatsApp & email integration</li>
-                        <li>Multi-format support (PDF, JPG, PNG)</li>
-                        <li>Automatic data extraction</li>
-                    </ul>
+                <div class="problem-card">
+                    <h3>Categorizing transactions</h3>
+                    <p>AI learns your patterns and categorizes everything automatically with 99% accuracy.</p>
                 </div>
-
-                <div class="agent-card">
-                    <div class="agent-icon gradient-blue">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <rect x="8" y="10" width="16" height="2" fill="white"/>
-                            <rect x="8" y="15" width="16" height="2" fill="white"/>
-                            <rect x="8" y="20" width="10" height="2" fill="white"/>
-                        </svg>
-                    </div>
-                    <h3>Smart Categorization</h3>
-                    <p>Machine learning categorizes every transaction with industry-leading accuracy. Learns your business patterns.</p>
-                    <ul class="agent-features">
-                        <li>Auto-assign expense categories</li>
-                        <li>Custom rules engine</li>
-                        <li>Continuous learning</li>
-                    </ul>
+                <div class="problem-card">
+                    <h3>Reconciling bank statements</h3>
+                    <p>Automatic matching. Zero manual work. Flags only what needs your attention.</p>
                 </div>
-
-                <div class="agent-card">
-                    <div class="agent-icon gradient-green">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M12 16L15 19L20 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="16" cy="16" r="10" stroke="white" stroke-width="2" fill="none"/>
-                        </svg>
-                    </div>
-                    <h3>Auto-Reconciliation</h3>
-                    <p>Matches bank feeds to transactions automatically. Flags anomalies. Eliminates manual reconciliation.</p>
-                    <ul class="agent-features">
-                        <li>Bank feed sync</li>
-                        <li>Duplicate detection</li>
-                        <li>Anomaly alerts</li>
-                    </ul>
-                </div>
-
-                <div class="agent-card">
-                    <div class="agent-icon gradient-pink">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                            <path d="M8 22L12 16L16 18L20 12L24 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                            <path d="M8 24H24" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Financial Intelligence</h3>
-                    <p>Real-time dashboards, predictive insights, and automated reporting. Your CFO dashboard, always current.</p>
-                    <ul class="agent-features">
-                        <li>Live P&L, cash flow, balance sheet</li>
-                        <li>Predictive analytics</li>
-                        <li>Custom report builder</li>
-                    </ul>
+                <div class="problem-card">
+                    <h3>Generating reports</h3>
+                    <p>Real-time P&L, cash flow, balance sheet. Always up to date. No waiting.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- How It Works -->
-    <section class="how-it-works">
+    <section id="how" class="how">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">How It Works</div>
-                <h2>From Chaos to Clarity in Minutes</h2>
-                <p>Set up in one day. See results immediately. Scale without limits.</p>
-            </div>
-            <div class="process-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-number">01</div>
-                    <div class="timeline-content">
-                        <h3>Connect Your Systems</h3>
-                        <p>Link your Xero account and bank feeds. Our team handles the technical setup. You'll be operational within 24 hours.</p>
-                    </div>
+            <h2>How It Works</h2>
+            <div class="how-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Connect Xero</h3>
+                    <p>We link to your existing Xero account (or set one up for you). Takes 10 minutes.</p>
                 </div>
-                <div class="timeline-connector"></div>
-                <div class="timeline-item">
-                    <div class="timeline-number">02</div>
-                    <div class="timeline-content">
-                        <h3>AI Learns Your Business</h3>
-                        <p>Our agents analyze your historical data, learn your patterns, and establish baselines. Accuracy improves with every transaction.</p>
-                    </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Send Receipts via WhatsApp</h3>
+                    <p>Snap a photo of any receipt or invoice. Send it to our WhatsApp number. AI does the rest.</p>
                 </div>
-                <div class="timeline-connector"></div>
-                <div class="timeline-item">
-                    <div class="timeline-number">03</div>
-                    <div class="timeline-content">
-                        <h3>Automate & Scale</h3>
-                        <p>Watch as receipts are processed instantly, transactions categorized automatically, and reports generated in real-time. You focus on strategy.</p>
-                    </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Everything Updates Automatically</h3>
+                    <p>Transactions categorized. Bank feeds reconciled. Reports always current. You just review and approve.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Deep Dive -->
-    <section id="features" class="features-detail">
+    <!-- Social Proof -->
+    <section class="social-proof">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Capabilities</div>
-                <h2>Enterprise Features, Startup Simplicity</h2>
-            </div>
-            <div class="features-grid">
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">📸</div>
-                    <h3>Receipt Capture Anywhere</h3>
-                    <p>Snap photos via WhatsApp, email, or mobile app. AI extracts supplier, date, amount, VAT—automatically syncs to Xero.</p>
+            <h2>Built by CA(SA)s, Powered by AI</h2>
+            <p class="social-subtitle">BALANSIO was founded by chartered accountants who got tired of seeing business owners waste time on manual bookkeeping. We combined accounting expertise with AI to build something better.</p>
+            <div class="proof-stats">
+                <div class="stat">
+                    <strong>Xero Certified</strong>
+                    <span>Official partner</span>
                 </div>
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">🔄</div>
-                    <h3>Bank Feed Integration</h3>
-                    <p>Direct connection to South African banks. Transactions flow automatically. Reconciliation happens in the background.</p>
+                <div class="stat">
+                    <strong>SARS Compliant</strong>
+                    <span>VAT & eFiling ready</span>
                 </div>
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">🧠</div>
-                    <h3>Intelligent Learning</h3>
-                    <p>Machine learning adapts to your business. The more you use BALANSIO, the smarter it becomes at predicting your needs.</p>
-                </div>
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">📊</div>
-                    <h3>Real-Time Dashboards</h3>
-                    <p>Live financial metrics. Cash runway. Burn rate. Profitability. All updated continuously, accessible anywhere.</p>
-                </div>
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">🔐</div>
-                    <h3>Bank-Grade Security</h3>
-                    <p>256-bit encryption. SOC 2 Type II compliant. Multi-factor authentication. Your data is fortress-protected.</p>
-                </div>
-                <div class="feature-detail-card">
-                    <div class="feature-icon-large">🇿🇦</div>
-                    <h3>SARS Compliance</h3>
-                    <p>Built for South African tax requirements. Automated VAT tracking. eFiling ready. Audit trail included.</p>
+                <div class="stat">
+                    <strong>Bank-level Security</strong>
+                    <span>256-bit encryption</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Pricing</div>
-                <h2>Scale With Confidence</h2>
-                <p>Transparent pricing that grows with your business. No hidden fees. Cancel anytime.</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-tier">Starter</div>
-                    <div class="pricing-description">Perfect for early-stage businesses</div>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">1,499</span>
-                        <span class="period">/month</span>
+            <h2>Simple Pricing That Pays for Itself</h2>
+            <p class="pricing-subtitle">Traditional bookkeepers charge R10,000-R20,000/month and still require you to organize receipts. We do it all for less.</p>
+
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Starter</h3>
+                        <div class="price-amount">
+                            <span class="currency">R</span>
+                            <span class="amount">1,499</span>
+                            <span class="period">/mo</span>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
+                    <ul class="price-features">
                         <li>Up to 100 transactions/month</li>
-                        <li>AI document processing</li>
-                        <li>Auto-categorization</li>
-                        <li>Bank feed reconciliation</li>
-                        <li>Basic reporting</li>
+                        <li>Receipt scanning via WhatsApp</li>
+                        <li>Automatic categorization</li>
+                        <li>Bank reconciliation</li>
+                        <li>Monthly reports</li>
                         <li>Email support</li>
                     </ul>
-                    <a href="#contact" class="btn-pricing">Get Started</a>
+                    <a href="#contact" class="btn-price">Start Free Trial</a>
                 </div>
 
-                <div class="pricing-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-tier">Professional</div>
-                    <div class="pricing-description">For growing businesses</div>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">2,999</span>
-                        <span class="period">/month</span>
+                <div class="price-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="price-header">
+                        <h3>Professional</h3>
+                        <div class="price-amount">
+                            <span class="currency">R</span>
+                            <span class="amount">2,999</span>
+                            <span class="period">/mo</span>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
+                    <ul class="price-features">
                         <li>Up to 500 transactions/month</li>
                         <li>Everything in Starter, plus:</li>
-                        <li>WhatsApp integration</li>
-                        <li>Advanced analytics & forecasting</li>
-                        <li>Custom reports</li>
+                        <li>Real-time financial dashboards</li>
+                        <li>Cash flow forecasting</li>
                         <li>Multi-user access</li>
                         <li>Priority support</li>
-                        <li>Dedicated account manager</li>
+                        <li>Monthly strategy call</li>
                     </ul>
-                    <a href="#contact" class="btn-pricing featured">Get Started</a>
+                    <a href="#contact" class="btn-price primary">Start Free Trial</a>
                 </div>
 
-                <div class="pricing-card">
-                    <div class="pricing-tier">Enterprise</div>
-                    <div class="pricing-description">Custom solutions for scale</div>
-                    <div class="price">
-                        <span class="amount-text">Custom</span>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Enterprise</h3>
+                        <div class="price-amount">
+                            <span class="amount-custom">Custom</span>
+                        </div>
                     </div>
-                    <ul class="pricing-features">
+                    <ul class="price-features">
                         <li>Unlimited transactions</li>
                         <li>Everything in Professional, plus:</li>
-                        <li>Custom AI training</li>
+                        <li>Multi-entity support</li>
+                        <li>Custom integrations</li>
+                        <li>Dedicated accountant</li>
                         <li>API access</li>
-                        <li>Multi-entity management</li>
-                        <li>White-label reporting</li>
                         <li>SLA guarantees</li>
-                        <li>24/7 phone support</li>
                     </ul>
-                    <a href="#contact" class="btn-pricing">Contact Sales</a>
+                    <a href="#contact" class="btn-price">Contact Us</a>
                 </div>
             </div>
-            <div class="pricing-note">
-                All plans include Xero integration, bank-grade security, and SARS compliance.
+
+            <div class="pricing-guarantee">
+                <strong>Money-back guarantee:</strong> Not happy in your first 30 days? Full refund, no questions asked.
             </div>
         </div>
     </section>
 
-    <!-- Social Proof / Testimonials -->
-    <section class="testimonials">
+    <!-- CTA -->
+    <section class="cta">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Success Stories</div>
-                <h2>Trusted by Forward-Thinking Businesses</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"BALANSIO reduced our month-end close from 5 days to 4 hours. The AI categorization is eerily accurate, and the real-time dashboards have transformed how we make decisions."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">TM</div>
-                        <div>
-                            <div class="author-name">Thabo Mokoena</div>
-                            <div class="author-business">CEO, TechVenture Capital</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"We were spending R15,000/month on bookkeepers and still getting reports late. BALANSIO costs less, delivers more, and our financials are always current. It's magic."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LD</div>
-                        <div>
-                            <div class="author-name">Lisa du Plessis</div>
-                            <div class="author-business">CFO, GreenScale Energy</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">★★★★★</div>
-                    <p class="testimonial-text">"The WhatsApp integration is a game-changer. Our field teams snap receipts on the spot, and everything's reconciled by the time they're back at the office. Seamless."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JN</div>
-                        <div>
-                            <div class="author-name">Johan Nel</div>
-                            <div class="author-business">Operations Director, BuildCo</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Ready to Get Your Time Back?</h2>
+            <p>Join South African businesses saving 15+ hours per month on bookkeeping.</p>
+            <a href="#contact" class="btn-primary large">Start Your Free Trial</a>
+            <p class="cta-note">14 days free • No credit card required</p>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Finance Operations?</h2>
-                <p>Join South Africa's most innovative businesses. Experience the power of AI-driven bookkeeping.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn-cta-large">Schedule Your Demo</a>
-                    <p class="cta-subtext">Free 14-day trial • No credit card required • Setup in 24 hours</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-label">About BALANSIO</div>
-                    <h2>Built for the Future of Finance</h2>
-                    <p>BALANSIO was founded by a team of chartered accountants, engineers, and AI researchers who saw an industry ripe for transformation. Traditional bookkeeping is manual, error-prone, and expensive. We knew there was a better way.</p>
-                    <p>By combining enterprise-grade AI with Xero's trusted accounting platform, we've created a solution that doesn't just automate tasks—it provides financial intelligence. Our system learns your business, adapts to your needs, and scales effortlessly as you grow.</p>
-                    <p>Today, we serve businesses across South Africa, from startups to established enterprises. Our mission: make world-class financial operations accessible to every business, regardless of size.</p>
-                    <div class="about-stats">
-                        <div class="about-stat">
-                            <div class="about-stat-number">500+</div>
-                            <div class="about-stat-label">Businesses Served</div>
-                        </div>
-                        <div class="about-stat">
-                            <div class="about-stat-number">R2.5B+</div>
-                            <div class="about-stat-label">Transactions Processed</div>
-                        </div>
-                        <div class="about-stat">
-                            <div class="about-stat-number">15K+</div>
-                            <div class="about-stat-label">Hours Saved Monthly</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-wrapper">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="section-label">Get Started</div>
-                    <h2>Experience BALANSIO</h2>
-                    <p>Schedule a personalized demo and see how AI can transform your bookkeeping. Our team will tailor the platform to your specific needs.</p>
-
+                    <h2>Get Started Today</h2>
+                    <p>Fill out the form and we'll set you up within 24 hours. Seriously.</p>
                     <div class="contact-details">
-                        <div class="contact-detail">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
-                            </svg>
-                            <div>
-                                <div class="detail-label">Email</div>
-                                <div class="detail-value">info@balansio.co.za</div>
-                            </div>
-                        </div>
-
-                        <div class="contact-detail">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="currentColor"/>
-                            </svg>
-                            <div>
-                                <div class="detail-label">Location</div>
-                                <div class="detail-value">Serving All of South Africa</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="trust-badges-contact">
-                        <div class="trust-badge-item">★ Xero Certified</div>
-                        <div class="trust-badge-item">★ SOC 2 Compliant</div>
-                        <div class="trust-badge-item">★ SARS Ready</div>
+                        <p><strong>Email:</strong> info@balansio.co.za</p>
+                        <p><strong>Response time:</strong> Within 2 hours (business days)</p>
+                        <p><strong>Setup time:</strong> Same day or next day</p>
                     </div>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Work Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="company">Company Name *</label>
-                            <input type="text" id="company" name="company" required>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="companySize">Company Size *</label>
-                                <select id="companySize" name="companySize" required>
-                                    <option value="">Select...</option>
-                                    <option value="1-10">1-10 employees</option>
-                                    <option value="11-50">11-50 employees</option>
-                                    <option value="51-200">51-200 employees</option>
-                                    <option value="200+">200+ employees</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="monthlyTransactions">Estimated Monthly Transactions *</label>
-                            <select id="monthlyTransactions" name="monthlyTransactions" required>
-                                <option value="">Select range...</option>
-                                <option value="0-100">0-100</option>
-                                <option value="100-500">100-500</option>
-                                <option value="500-1000">500-1,000</option>
-                                <option value="1000+">1,000+</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Tell us about your needs</label>
-                            <textarea id="message" name="message" rows="4" placeholder="What challenges are you facing with your current bookkeeping? What features are most important to you?"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-primary-large">Request Demo</button>
-                        <p class="form-note">We'll respond within 2 business hours</p>
-                    </form>
-                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                    <input type="email" name="email" placeholder="Work Email *" required>
+                    <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <input type="text" name="company" placeholder="Company Name *" required>
+                    <select name="transactions" required>
+                        <option value="">Monthly Transactions *</option>
+                        <option value="0-100">0-100 (Starter)</option>
+                        <option value="100-500">100-500 (Professional)</option>
+                        <option value="500+">500+ (Enterprise)</option>
+                    </select>
+                    <textarea name="message" rows="3" placeholder="Tell us about your business (optional)"></textarea>
+                    <button type="submit" class="btn-primary">Start Free Trial</button>
+                    <p class="form-note">By submitting, you agree to our terms. We'll never spam you.</p>
+                </form>
             </div>
         </div>
     </section>
@@ -547,60 +246,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <div class="footer-logo">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <defs>
-                                <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <rect width="40" height="40" rx="10" fill="url(#logoGradientFooter)"/>
-                            <circle cx="20" cy="20" r="10" stroke="white" stroke-width="2" fill="none"/>
-                            <circle cx="20" cy="20" r="5" fill="white"/>
-                        </svg>
-                        <span>BALANSIO</span>
-                    </div>
-                    <p class="footer-tagline">AI-powered bookkeeping and financial intelligence for modern businesses.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-icon">LinkedIn</a>
-                        <a href="#" class="social-icon">Twitter</a>
-                    </div>
+                    <strong>BALANSIO</strong>
+                    <p>AI-powered bookkeeping for South African businesses.</p>
                 </div>
-
                 <div class="footer-col">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="#platform">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <strong>Product</strong>
+                    <a href="#how">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
                 </div>
-
                 <div class="footer-col">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">API Reference</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
+                    <strong>Legal</strong>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
-
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Compliance</a></li>
-                    </ul>
+                    <strong>Contact</strong>
+                    <p>info@balansio.co.za</p>
+                    <p>South Africa</p>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2025 BALANSIO. All rights reserved. Built with AI for the future of finance.</p>
+                <p>&copy; 2025 BALANSIO. All rights reserved.</p>
             </div>
         </div>
     </footer>
