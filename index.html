@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BALANSIO - AI-powered bookkeeping for Ballito small businesses. Automate your accounting with Xero integration. Save time, reduce errors, focus on growth.">
+    <meta name="keywords" content="bookkeeping Ballito, AI accounting, Xero bookkeeping, small business accounting, automated bookkeeping South Africa">
+    <title>BALANSIO - AI-Powered Bookkeeping for Ballito Businesses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="8" fill="#0066FF"/>
+                        <path d="M16 8C11.58 8 8 11.58 8 16C8 20.42 11.58 24 16 24C20.42 24 24 20.42 24 16C24 11.58 20.42 8 16 8ZM16 22C12.69 22 10 19.31 10 16C10 12.69 12.69 10 16 10C19.31 10 22 12.69 22 16C22 19.31 19.31 22 16 22Z" fill="white"/>
+                        <path d="M16 12C13.79 12 12 13.79 12 16C12 18.21 13.79 20 16 20C18.21 20 20 18.21 20 16C20 13.79 18.21 12 16 12Z" fill="white"/>
+                    </svg>
+                    <span class="logo-text">BALANSIO</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#contact" class="btn-primary-small">Get Started</a>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features" onclick="toggleMobileMenu()">Features</a>
+        <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
+        <a href="#how-it-works" onclick="toggleMobileMenu()">How It Works</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Get Started</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#0066FF"/>
+                    </svg>
+                    <span>AI-Powered Bookkeeping for Ballito</span>
+                </div>
+                <h1 class="hero-title">
+                    Stop Drowning in Paperwork.<br>
+                    <span class="gradient-text">Let AI Handle Your Books.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Automated bookkeeping built on Xero for Ballito's small businesses.
+                    Snap receipts via WhatsApp, get real-time reports, and focus on growing your business—not data entry.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary-large">Start Free Consultation</a>
+                    <a href="https://wa.me/27XXXXXXXXX?text=Hi%20Steve%2C%20I'm%20interested%20in%20BALANSIO%20bookkeeping%20services" class="btn-secondary-large" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.472 14.382C17.015 14.153 14.803 13.065 14.385 12.914C13.967 12.763 13.658 12.687 13.348 13.144C13.039 13.601 12.173 14.611 11.903 14.92C11.632 15.229 11.362 15.267 10.905 15.038C10.448 14.809 8.973 14.337 7.231 12.781C5.869 11.571 4.948 10.069 4.678 9.612C4.407 9.155 4.649 8.903 4.878 8.674C5.085 8.467 5.335 8.137 5.564 7.867C5.793 7.596 5.869 7.403 6.02 7.094C6.171 6.785 6.095 6.515 5.981 6.286C5.869 6.057 4.949 3.842 4.57 2.928C4.2 2.041 3.821 2.159 3.539 2.146C3.268 2.133 2.959 2.13 2.649 2.13C2.34 2.13 1.844 2.244 1.426 2.701C1.008 3.158 -0.121 4.246 -0.121 6.461C-0.121 8.676 1.465 10.814 1.694 11.123C1.923 11.432 4.947 16.031 9.508 17.986C10.597 18.475 11.445 18.761 12.104 18.974C13.198 19.312 14.196 19.265 14.992 19.149C15.877 19.02 17.663 18.025 18.042 16.937C18.421 15.849 18.421 14.916 18.307 14.725C18.193 14.534 17.929 14.611 17.472 14.382ZM12.04 21.81H12.037C10.188 21.809 8.378 21.296 6.809 20.33L6.43 20.104L2.788 21.053L3.757 17.518L3.506 17.124C2.451 15.497 1.892 13.608 1.893 11.668C1.895 6.481 6.116 2.26 12.044 2.26C14.915 2.261 17.602 3.38 19.623 5.402C21.644 7.424 22.761 10.112 22.76 12.983C22.758 18.17 18.537 22.391 12.04 21.81Z" fill="currentColor"/>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">75%</div>
+                        <div class="stat-label">Time Saved</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Automated</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dot"></div>
+                        <div class="dashboard-dot"></div>
+                        <div class="dashboard-dot"></div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="chart-area">
+                            <svg viewBox="0 0 400 200" class="chart">
+                                <polyline points="0,180 50,140 100,160 150,80 200,100 250,40 300,70 350,30 400,50" stroke="#0066FF" stroke-width="3" fill="none"/>
+                                <polyline points="0,200 50,180 100,190 150,160 200,170 250,140 300,150 350,130 400,140 400,200 0,200" fill="url(#gradient)" opacity="0.2"/>
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0066FF;stop-opacity:0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-label">Revenue</div>
+                                <div class="metric-value">R 45,320</div>
+                                <div class="metric-change positive">+12.5%</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Expenses</div>
+                                <div class="metric-value">R 18,450</div>
+                                <div class="metric-change negative">-5.2%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-content">
+                <span class="trust-label">Powered by industry leaders:</span>
+                <div class="trust-logos">
+                    <div class="trust-logo">Xero Certified</div>
+                    <div class="trust-logo">AI-Powered</div>
+                    <div class="trust-logo">Ballito Local</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="problems">
+        <div class="container">
+            <div class="section-header">
+                <h2>Are These Bookkeeping Nightmares Keeping You Up?</h2>
+                <p>You're not alone. Most Ballito business owners face the same challenges.</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📦</div>
+                    <h3>Shoebox of Receipts</h3>
+                    <p>Drowning in paper receipts, invoices, and statements with no time to organize them.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Hours of Data Entry</h3>
+                    <p>Spending nights and weekends entering transactions instead of growing your business.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>No Financial Clarity</h3>
+                    <p>Never knowing if you're profitable until tax time—and then it's too late to adjust.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Expensive Accountants</h3>
+                    <p>Traditional bookkeepers cost a fortune and still require you to do most of the prep work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>How BALANSIO Makes Bookkeeping Effortless</h2>
+                <p>AI automation meets human expertise. The perfect balance for your business.</p>
+            </div>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E6F0FF"/>
+                            <path d="M24 14C18.48 14 14 18.48 14 24C14 29.52 18.48 34 24 34C29.52 34 34 29.52 34 24C34 18.48 29.52 14 24 14ZM24 30C20.69 30 18 27.31 18 24C18 20.69 20.69 18 24 18C27.31 18 30 20.69 30 24C30 27.31 27.31 30 24 30Z" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Snap & Upload via WhatsApp</h3>
+                        <p>Simply photograph your receipts and invoices and send them via WhatsApp. Our AI extracts all the details and uploads them to your ledger automatically. No more manual typing or lost receipts.</p>
+                        <ul class="feature-benefits">
+                            <li>Instant receipt capture from your phone</li>
+                            <li>AI reads dates, amounts, suppliers, and VAT</li>
+                            <li>Works anywhere—café, car, client site</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E6F0FF"/>
+                            <path d="M20 14H28V16H20V14ZM20 18H28V20H20V18ZM20 22H28V24H20V22ZM16 26H32V28H16V26ZM16 30H32V32H16V30Z" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Smart Auto-Categorization</h3>
+                        <p>AI automatically categorizes every transaction—fuel, rent, supplies, payroll—and reconciles your bank feeds with your books. What used to take hours now happens in seconds.</p>
+                        <ul class="feature-benefits">
+                            <li>Learns your business patterns over time</li>
+                            <li>Matches bank transactions automatically</li>
+                            <li>Reduces errors and duplicate entries</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E6F0FF"/>
+                            <path d="M32 18L30.59 16.59L24 23.17L17.41 16.59L16 18L24 26L32 18Z" fill="#0066FF"/>
+                            <path d="M16 28H32V30H16V28Z" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Real-Time Financial Reports</h3>
+                        <p>Get instant access to profit & loss, cash flow, and balance sheet reports whenever you need them. Make data-driven decisions without waiting for month-end. Your books are always up-to-date.</p>
+                        <ul class="feature-benefits">
+                            <li>Access from any device, anywhere</li>
+                            <li>See your financial health at a glance</li>
+                            <li>Export reports for tax or investors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#E6F0FF"/>
+                            <path d="M24 15C19.03 15 15 19.03 15 24C15 28.97 19.03 33 24 33C28.97 33 33 28.97 33 24C33 19.03 28.97 15 24 15ZM24 30C20.69 30 18 27.31 18 24C18 20.69 20.69 18 24 18C27.31 18 30 20.69 30 24C30 27.31 27.31 30 24 30ZM24.5 19.5H23V24.5L27.25 27.12L28 25.92L24.5 23.75V19.5Z" fill="#0066FF"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Built on Xero's Trusted Platform</h3>
+                        <p>Your data lives securely in Xero, the world's leading cloud accounting software. BALANSIO adds an AI automation layer on top, giving you the best of both worlds: reliability and innovation.</p>
+                        <ul class="feature-benefits">
+                            <li>Bank-grade security and encryption</li>
+                            <li>Seamless integration with your bank</li>
+                            <li>Compliance-ready for SARS submissions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started in 3 Simple Steps</h2>
+                <p>From setup to stress-free bookkeeping in less than 48 hours.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Free Consultation</h3>
+                        <p>Book a quick call with Steve. We'll discuss your business needs and show you exactly how BALANSIO works.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Quick Setup</h3>
+                        <p>We connect your Xero account, link your bank feeds, and set up WhatsApp integration. You're ready to go.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Relax & Grow</h3>
+                        <p>Start snapping receipts and watch your books update automatically. Focus on your customers while we handle the numbers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>No hidden fees. No surprises. Just honest bookkeeping that fits your budget.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">R</span>
+                            <span class="amount">999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 50 transactions/month</li>
+                        <li>WhatsApp receipt scanning</li>
+                        <li>Auto-categorization</li>
+                        <li>Monthly reports</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">R</span>
+                            <span class="amount">1,799</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Up to 200 transactions/month</li>
+                        <li>WhatsApp receipt scanning</li>
+                        <li>Auto-categorization & reconciliation</li>
+                        <li>Real-time reports & insights</li>
+                        <li>Priority WhatsApp support</li>
+                        <li>Quarterly financial review</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Business</h3>
+                        <div class="price">
+                            <span class="currency">R</span>
+                            <span class="amount">2,999</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited transactions</li>
+                        <li>WhatsApp receipt scanning</li>
+                        <li>Full automation suite</li>
+                        <li>Real-time reports & forecasting</li>
+                        <li>Dedicated phone support</li>
+                        <li>Monthly financial strategy calls</li>
+                        <li>VAT & SARS compliance support</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <p class="pricing-note">All plans include Xero integration. First month 50% off for early adopters!</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Ballito Business Owners Say</h2>
+                <p>Real results from real local businesses.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I used to spend entire weekends catching up on bookkeeping. Now I just snap photos on my phone and everything's done. I've reclaimed my life!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SA</div>
+                        <div>
+                            <div class="author-name">Sarah Adams</div>
+                            <div class="author-business">The Dolphin Café, Ballito</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"As a tradesman, numbers aren't my thing. Steve and BALANSIO handle everything while I focus on my clients. Best decision I made this year."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <div class="author-name">Mike Khumalo</div>
+                            <div class="author-business">MK Plumbing Services</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The real-time reports give me confidence in every decision I make. I always know exactly where my business stands financially."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TN</div>
+                        <div>
+                            <div class="author-name">Thandi Nkosi</div>
+                            <div class="author-business">Ballito Beauty Studio</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Reclaim Your Time?</h2>
+                <p>Join Ballito's smartest business owners who are already saving hours every week.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary-large">Start Your Free Consultation</a>
+                    <a href="https://wa.me/27XXXXXXXXX?text=Hi%20Steve%2C%20I'd%20like%20to%20know%20more%20about%20BALANSIO" class="btn-whatsapp" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17.472 14.382C17.015 14.153 14.803 13.065 14.385 12.914C13.967 12.763 13.658 12.687 13.348 13.144C13.039 13.601 12.173 14.611 11.903 14.92C11.632 15.229 11.362 15.267 10.905 15.038C10.448 14.809 8.973 14.337 7.231 12.781C5.869 11.571 4.948 10.069 4.678 9.612C4.407 9.155 4.649 8.903 4.878 8.674C5.085 8.467 5.335 8.137 5.564 7.867C5.793 7.596 5.869 7.403 6.02 7.094C6.171 6.785 6.095 6.515 5.981 6.286C5.869 6.057 4.949 3.842 4.57 2.928C4.2 2.041 3.821 2.159 3.539 2.146C3.268 2.133 2.959 2.13 2.649 2.13C2.34 2.13 1.844 2.244 1.426 2.701C1.008 3.158 -0.121 4.246 -0.121 6.461C-0.121 8.676 1.465 10.814 1.694 11.123C1.923 11.432 4.947 16.031 9.508 17.986C10.597 18.475 11.445 18.761 12.104 18.974C13.198 19.312 14.196 19.265 14.992 19.149C15.877 19.02 17.663 18.025 18.042 16.937C18.421 15.849 18.421 14.916 18.307 14.725C18.193 14.534 17.929 14.611 17.472 14.382ZM12.04 21.81H12.037C10.188 21.809 8.378 21.296 6.809 20.33L6.43 20.104L2.788 21.053L3.757 17.518L3.506 17.124C2.451 15.497 1.892 13.608 1.893 11.668C1.895 6.481 6.116 2.26 12.044 2.26C14.915 2.261 17.602 3.38 19.623 5.402C21.644 7.424 22.761 10.112 22.76 12.983C22.758 18.17 18.537 22.391 12.04 21.81Z" fill="currentColor"/>
+                        </svg>
+                        Chat with Steve
+                    </a>
+                </div>
+                <p class="cta-note">First 10 clients get 50% off their first 3 months!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Talk About Your Business</h2>
+                    <p>Book your free consultation with Steve. No pressure, just honest advice about how BALANSIO can help your specific business.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#0066FF"/>
+                            </svg>
+                            <div>
+                                <div class="detail-label">Email</div>
+                                <div class="detail-value">steve@balansio.co.za</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#0066FF"/>
+                            </svg>
+                            <div>
+                                <div class="detail-label">Phone / WhatsApp</div>
+                                <div class="detail-value">+27 XX XXX XXXX</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#0066FF"/>
+                            </svg>
+                            <div>
+                                <div class="detail-label">Location</div>
+                                <div class="detail-value">Serving Ballito & Surrounds</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="trust-badge-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 0L12.2451 6.90983H19.5106L13.6328 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFD700"/>
+                            </svg>
+                            <span>Xero Certified</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 0L12.2451 6.90983H19.5106L13.6328 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFD700"/>
+                            </svg>
+                            <span>Local Expert</span>
+                        </div>
+                        <div class="trust-badge-item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 0L12.2451 6.90983H19.5106L13.6328 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#FFD700"/>
+                            </svg>
+                            <span>CA(SA)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="business">Business Name *</label>
+                            <input type="text" id="business" name="business" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="transactions">Monthly Transactions (approx) *</label>
+                            <select id="transactions" name="transactions" required>
+                                <option value="">Select range...</option>
+                                <option value="0-50">0-50 (Starter)</option>
+                                <option value="50-200">50-200 (Professional)</option>
+                                <option value="200+">200+ (Business)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell us about your business *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="What industry are you in? What bookkeeping challenges are you facing?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary-large">Send Inquiry</button>
+                        <p class="form-note">We'll respond within 24 hours. Usually much faster!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" rx="8" fill="#0066FF"/>
+                            <path d="M16 8C11.58 8 8 11.58 8 16C8 20.42 11.58 24 16 24C20.42 24 24 20.42 24 16C24 11.58 20.42 8 16 8ZM16 22C12.69 22 10 19.31 10 16C10 12.69 12.69 10 16 10C19.31 10 22 12.69 22 16C22 19.31 19.31 22 16 22Z" fill="white"/>
+                            <path d="M16 12C13.79 12 12 13.79 12 16C12 18.21 13.79 20 16 20C18.21 20 20 18.21 20 16C20 13.79 18.21 12 16 12Z" fill="white"/>
+                        </svg>
+                        <span>BALANSIO</span>
+                    </div>
+                    <p class="footer-tagline">AI-powered bookkeeping for Ballito's small businesses. Focus on growth, not paperwork.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>steve@balansio.co.za</li>
+                        <li>+27 XX XXX XXXX</li>
+                        <li>Ballito, KZN</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 BALANSIO. All rights reserved. Built with care for Ballito businesses.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
