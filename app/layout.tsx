@@ -6,8 +6,6 @@ import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const dynamic = "force-dynamic"
-
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'https://balansio.co.za'),
   title: 'BALANSIO | AI Bookkeeping for SA Businesses',
