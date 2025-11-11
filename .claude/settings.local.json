@@ -5,7 +5,13 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(xcopy:*)",
+      "Bash(rsync:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(node scripts/generate-placeholders.js:*)"
     ],
     "deny": [],
     "ask": []
