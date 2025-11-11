@@ -65,3 +65,6 @@ env/
 # Backup files
 *.bak
 *.backup
+
+# Abacus original project files (already copied to main project)
+balansio-complete-project/
