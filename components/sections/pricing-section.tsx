@@ -27,11 +27,11 @@ export default function PricingSection() {
   const plans = [
     {
       name: "Starter",
-      price: "R1,999",
+      price: "R599",
       period: "/month",
       description: "Perfect for solo entrepreneurs and freelancers",
       features: [
-        "Up to 50 transactions/month",
+        "Up to 100 transactions/month",
         "WhatsApp receipt capture",
         "Basic AI categorization",
         "Monthly financial reports",
@@ -43,11 +43,11 @@ export default function PricingSection() {
     },
     {
       name: "Professional",
-      price: "R2,999",
+      price: "R999",
       period: "/month",
       description: "Ideal for growing small businesses",
       features: [
-        "Unlimited transactions",
+        "Up to 500 transactions/month",
         "WhatsApp receipt capture",
         "Advanced AI categorization",
         "Real-time dashboards",
@@ -61,10 +61,11 @@ export default function PricingSection() {
     },
     {
       name: "Enterprise",
-      price: "Custom",
-      period: "pricing",
+      price: "R2,999",
+      period: "/month",
       description: "For established businesses with complex needs",
       features: [
+        "Up to 5000 transactions/month",
         "Everything in Professional",
         "Multiple business entities",
         "Dedicated account manager",
