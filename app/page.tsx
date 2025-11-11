@@ -7,6 +7,9 @@ import PricingSection from '@/components/sections/pricing-section'
 import ContactSection from '@/components/sections/contact-section'
 import Footer from '@/components/sections/footer'
 
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export default function HomePage() {
   return (
     <main className="min-h-screen">
