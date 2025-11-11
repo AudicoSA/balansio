@@ -8,7 +8,12 @@ import ContactSection from '@/components/sections/contact-section'
 import Footer from '@/components/sections/footer'
 
 export const dynamic = 'force-static'
+export const dynamicParams = false
 export const revalidate = false
+
+export async function generateStaticParams() {
+  return []
+}
 
 export default function HomePage() {
   return (
