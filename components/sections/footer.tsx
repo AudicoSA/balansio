@@ -2,6 +2,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
@@ -13,7 +14,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-white mb-4">BALANSIO</div>
+            <div className="mb-4">
+              <Image
+                src="/balansio_logo.png"
+                alt="Balansio"
+                width={150}
+                height={40}
+                className="h-8 w-auto brightness-0 invert"
+              />
+            </div>
             <p className="text-gray-400 mb-6 max-w-md">
               AI-powered bookkeeping for South African businesses. 
               Save time, reduce costs, and focus on growing your business 

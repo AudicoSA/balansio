@@ -87,15 +87,15 @@ export default function ImagesAdminPage() {
               {section.category}
             </h2>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
               {section.images.map((img) => (
                 <div key={img.path} className="border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition-colors">
-                  <div className="aspect-video relative bg-gray-100 rounded-lg overflow-hidden mb-3">
+                  <div className="aspect-video relative bg-gray-100 rounded-lg overflow-hidden mb-3 h-80">
                     <Image
                       src={img.path}
                       alt={img.name}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       unoptimized={img.path.startsWith('http')}
                     />
                   </div>

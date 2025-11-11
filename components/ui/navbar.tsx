@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
@@ -54,9 +55,16 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold text-[#0066FF] hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
-            Balansio
+            <Image
+              src="/balansio_logo.png"
+              alt="Balansio"
+              width={150}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
           </button>
 
           {/* Desktop Menu */}
