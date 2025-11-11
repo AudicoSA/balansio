@@ -7,7 +7,16 @@ const nextConfig = {
     },
   },
   images: {
-    domains: ['balansio-receipts.s3.af-south-1.amazonaws.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'balansio-receipts.s3.af-south-1.amazonaws.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thumbs.dreamstime.com',
+      },
+    ],
   },
 }
 
