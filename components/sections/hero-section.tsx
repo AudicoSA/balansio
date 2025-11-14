@@ -68,7 +68,7 @@ export default function HeroSection() {
                 <div className="flex -space-x-3">
                   <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative bg-gray-300">
                     <Image
-                      src="/avatar1.jpg"
+                      src="/avatar1.png"
                       alt="Happy Balansio customer - business owner"
                       fill
                       className="object-cover"
@@ -76,7 +76,7 @@ export default function HeroSection() {
                   </div>
                   <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative bg-gray-300">
                     <Image
-                      src="/avatar2.jpg"
+                      src="/avatar2.png"
                       alt="Satisfied customer - entrepreneur"
                       fill
                       className="object-cover"
@@ -84,7 +84,7 @@ export default function HeroSection() {
                   </div>
                   <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden relative bg-gray-300">
                     <Image
-                      src="/avatar3.jpg"
+                      src="/avatar3.png"
                       alt="Successful client - startup founder"
                       fill
                       className="object-cover"

@@ -17,8 +17,7 @@ export default function ImagesAdminPage() {
     {
       category: 'Hero Section',
       images: [
-        { name: 'Main Hero Image', path: imageConfig.hero.main, used: 'hero-section.tsx' },
-        { name: 'Hero Visual', path: '/hero.jpg', used: 'hero-section.tsx' },
+        { name: 'Hero Image', path: imageConfig.hero.main, used: 'hero-section.tsx' },
         { name: 'Avatar 1', path: imageConfig.hero.avatars.avatar1, used: 'hero-section.tsx' },
         { name: 'Avatar 2', path: imageConfig.hero.avatars.avatar2, used: 'hero-section.tsx' },
         { name: 'Avatar 3', path: imageConfig.hero.avatars.avatar3, used: 'hero-section.tsx' },

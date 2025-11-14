@@ -17,19 +17,19 @@ export default function HowItWorksSection() {
       number: "01",
       title: "Send Your Receipts",
       description: "Simply snap a photo of your receipts and invoices, then send them via WhatsApp. Our AI instantly captures all the important details - no manual data entry required.",
-      image: "/step1.jpg"
+      image: "/step1.png"
     },
     {
       number: "02",
       title: "AI Categorizes Everything",
       description: "Our intelligent system automatically categorizes transactions, matches them to the right accounts, and flags any anomalies. 99% accuracy guaranteed, with human oversight for peace of mind.",
-      image: "/step2.jpg"
+      image: "/step2.png"
     },
     {
       number: "03",
       title: "Get Professional Reports",
       description: "Access real-time dashboards, monthly reports, and SARS-compliant documentation. Schedule virtual consultations with our CA(SA) team whenever you need guidance.",
-      image: "/step3.jpg"
+      image: "/step3.png"
     }
   ]
 
@@ -80,12 +80,13 @@ export default function HowItWorksSection() {
               <div
                 className={`animate-fadeInUp animate-delay-200 ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}
               >
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-gray-100">
                   <Image
                     src={step.image}
                     alt={step.title}
                     fill
-                    className="object-cover"
+                    className="object-contain"
+                    unoptimized
                   />
                 </div>
               </div>

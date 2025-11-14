@@ -12,26 +12,26 @@
 export const imageConfig = {
   // Hero Section
   hero: {
-    main: "/placeholder-hero.svg",
+    main: "/hero.png",
     avatars: {
-      avatar1: "/placeholder-avatar1.svg",
-      avatar2: "/placeholder-avatar2.svg",
-      avatar3: "/placeholder-avatar3.svg",
+      avatar1: "/avatar1.png",
+      avatar2: "/avatar2.png",
+      avatar3: "/avatar3.png",
     }
   },
 
   // How It Works Section
   steps: {
-    step1: "/placeholder-step1.svg",
-    step2: "/placeholder-step2.svg",
-    step3: "/placeholder-step3.svg",
+    step1: "/step1.png",
+    step2: "/step2.png",
+    step3: "/step3.png",
   },
 
   // Testimonials Section
   testimonials: {
-    testimonial1: "/placeholder-testimonial1.svg",
-    testimonial2: "/placeholder-testimonial2.svg",
-    testimonial3: "/placeholder-testimonial3.svg",
+    testimonial1: "/testimonial1.png",
+    testimonial2: "/testimonial2.png",
+    testimonial3: "/testimonial3.png",
   },
 
   // Contact Section

@@ -16,19 +16,19 @@ export default function TestimonialsSection() {
     {
       name: "David Mokoena",
       role: "Owner, Tech Solutions SA",
-      image: "/testimonial1.jpg",
+      image: "/testimonial1.png",
       text: "Balansio has saved me countless hours every month. The AI categorization is incredibly accurate, and the Xero integration is seamless. I can now focus on growing my business instead of wrestling with spreadsheets."
     },
     {
       name: "Sarah van der Merwe",
       role: "Restaurant Owner",
-      image: "/testimonial2.jpg",
+      image: "/testimonial2.png",
       text: "As a restaurant owner, I deal with dozens of receipts daily. Balansio's WhatsApp integration is a game-changer. I simply snap a photo and send it - everything else is automatic. It's like having a dedicated bookkeeper at a fraction of the cost."
     },
     {
       name: "James Naidoo",
       role: "Retail Shop Owner",
-      image: "/testimonial3.jpg",
+      image: "/testimonial3.png",
       text: "I was skeptical about AI bookkeeping at first, but Balansio has proven to be more reliable than my previous bookkeeper. The SARS compliance features give me peace of mind, and the monthly reports are crystal clear."
     }
   ]
